@@ -1,0 +1,38 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class JavaApplication1 {
+
+    public static void main(String[] args) {
+        Scanner in =  new Scanner(System.in);
+        int n = in.nextInt();
+        String a="noday";
+        switch(n) {
+            case 0:
+                a="Sunday";
+                break;
+            case 1:
+                a="Monday";
+                break;
+            case 2:
+                a="Tuesday";
+                break;
+            case 3:
+                a="Wednesday";
+                break;
+            case 4:
+                a="Thursday";
+                break;
+            case 5:
+                a="Friday";
+                break;
+            case 6:
+                a="Saturday";
+                break;
+            default:
+                a="Not a valid day";
+                break;
+        }
+        System.out.println(a);
+    }
+}
